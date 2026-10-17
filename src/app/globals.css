@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0B0814;
-  --color-surface: #140F24;
-  --color-surface-hover: #1E1736;
-  --color-border: #282142;
-  --color-text: #FFFFFF;
-  --color-text-muted: #9CA3AF;
-  --color-text-dim: #6B7280;
+  --color-bg: #F8F9FD;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F1F4FA;
+  --color-border: #E2E8F0;
+  --color-text: #0F172A;
+  --color-text-muted: #64748B;
+  --color-text-dim: #94A3B8;
   --color-accent: #7C3AED;
   --color-accent-end: #A855F7;
   --color-purple: #8B5CF6;
-  --color-teal: #06B6D4;
-  --color-amber: #F59E0B;
+  --color-teal: #0D9488;
+  --color-amber: #D97706;
 
   --font-sans: var(--font-sans), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-serif), "Outfit", "Plus Jakarta Sans", sans-serif;
@@ -60,10 +60,15 @@ a {
    Sleek dark-themed scrollbar with brand purple gradient
    ========================================================================== */
 
+/* ==========================================================================
+   GLOBAL CUSTOM SCROLLBAR
+   Sleek light-themed scrollbar with purple accents
+   ========================================================================== */
+
 /* Standard CSS for Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(124, 58, 237, 0.4) #0B0814;
+  scrollbar-color: rgba(124, 58, 237, 0.35) #F8F9FD;
 }
 
 /* Webkit (Chrome, Edge, Safari, Opera) */
@@ -73,21 +78,21 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0B0814;
+  background: #F8F9FD;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, rgba(124, 58, 237, 0.4) 0%, rgba(168, 85, 247, 0.4) 100%);
   border-radius: 9999px;
-  border: 2px solid #0B0814;
+  border: 2px solid #F8F9FD;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgba(124, 58, 237, 0.65) 0%, rgba(168, 85, 247, 0.65) 100%);
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.7) 0%, rgba(168, 85, 247, 0.7) 100%);
 }
 
 ::-webkit-scrollbar-corner {
-  background: #0B0814;
+  background: #F8F9FD;
 }
 
 /* ==========================================================================
@@ -121,9 +126,7 @@ a {
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 /* Custom smooth thin scrollbar for phone frame */
@@ -145,47 +148,53 @@ a {
 }
 
 /* ==========================================================================
-   CLEAN PROFESSIONAL DARK DESIGN SYSTEM
-   Flat cards with subtle borders — no neumorphism, no clay, no gimmicks
+   CLEAN PROFESSIONAL LIGHT DESIGN SYSTEM
+   Soft cards with crisp modern borders and delicate shadows
    ========================================================================== */
 
 /* Clean flat card surface */
 .card-flat {
-  background: rgba(20, 15, 36, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
 }
 
 /* Slightly elevated card */
 .card-raised {
-  background: rgba(20, 15, 36, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
 }
 
 /* Card hover — gentle border brighten without lifting position */
 .card-hover {
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-hover:hover {
-  border-color: rgba(124, 58, 237, 0.3);
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 12px 30px -8px rgba(124, 58, 237, 0.12);
 }
 
 /* Subtle inset well for icon containers */
 .card-inset {
-  background: rgba(11, 8, 20, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: #F1F4FA;
+  border: 1px solid #E2E8F0;
 }
 
 /* Clean ghost button */
 .btn-ghost {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #334155;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
   transition: all 0.25s ease;
 }
 
 .btn-ghost:hover {
-  border-color: rgba(124, 58, 237, 0.35);
-  background: rgba(124, 58, 237, 0.06);
+  border-color: #7C3AED;
+  color: #7C3AED;
+  background: rgba(124, 58, 237, 0.05);
 }
 
 .btn-ghost:active {
@@ -194,6 +203,6 @@ a {
 
 /* Clean pill badge */
 .badge-pill {
-  background: rgba(20, 15, 36, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #F1F4FA;
+  border: 1px solid #E2E8F0;
 }

@@ -30,10 +30,11 @@ export default function Navbar() {
 
       gsap.fromTo(
         nav,
-        { backgroundColor: "rgba(11,8,20,0)" },
+        { backgroundColor: "rgba(248,249,253,0)" },
         {
-          backgroundColor: "rgba(11,8,20,0.9)",
+          backgroundColor: "rgba(255,255,255,0.88)",
           backdropFilter: "blur(12px)",
+          borderBottomColor: "rgba(226,232,240,0.8)",
           ease: "none",
           scrollTrigger: {
             trigger: document.body,

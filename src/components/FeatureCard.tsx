@@ -22,7 +22,7 @@ export default function FeatureCard({
         {icon}
       </div>
 
-      <h3 className="text-base sm:text-lg font-semibold text-white mb-2 tracking-tight">
+      <h3 className="text-base sm:text-lg font-semibold text-text mb-2 tracking-tight">
         {title}
       </h3>
       <p className="text-text-muted text-xs sm:text-sm leading-relaxed font-normal">

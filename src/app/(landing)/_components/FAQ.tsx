@@ -142,27 +142,24 @@ export default function FAQ() {
         className="faq-item will-change-transform"
       >
         <div
-          className={`group relative card-flat rounded-2xl transition-colors duration-300 overflow-hidden ${
+          className={`group relative card-flat rounded-2xl transition-all duration-300 overflow-hidden ${
             isOpen
-              ? "border-white/[0.16] bg-[rgba(26,26,38,0.95)]"
-              : "border-white/[0.08] hover:border-white/[0.16] hover:bg-[rgba(26,26,38,0.92)]"
+              ? "border-[#7C3AED]/40 shadow-md shadow-[#7C3AED]/5 bg-white"
+              : "hover:border-[#7C3AED]/30 bg-white"
           }`}
         >
-          {/* Subtle top rim light */}
-          <div className="absolute inset-x-6 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/[0.06] to-transparent pointer-events-none" />
-
           <button
             type="button"
             onClick={() => toggleItem(originalIndex)}
             className="w-full flex items-center justify-between p-6 text-left gap-4 focus:outline-none focus-visible:ring-1 focus-visible:ring-accent cursor-pointer"
             aria-expanded={isOpen}
           >
-            <span className="text-base sm:text-lg font-medium text-text group-hover:text-white transition-colors duration-200 leading-snug">
+            <span className="text-base sm:text-lg font-semibold text-text group-hover:text-accent transition-colors duration-200 leading-snug">
               {faq.question}
             </span>
             <span
-              className={`flex-shrink-0 w-8 h-8 rounded-full border border-white/[0.08] flex items-center justify-center text-text-muted transition-all duration-300 group-hover:border-accent/30 group-hover:text-accent group-hover:bg-accent/5 ${
-                isOpen ? "rotate-180 text-text bg-white/[0.06]" : ""
+              className={`flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-text-muted transition-all duration-300 group-hover:border-accent group-hover:text-accent group-hover:bg-accent/5 ${
+                isOpen ? "rotate-180 text-accent bg-accent/10 border-accent/30" : ""
               }`}
             >
               <svg

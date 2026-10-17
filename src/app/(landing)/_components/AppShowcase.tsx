@@ -242,10 +242,10 @@ export default function AppShowcase() {
     <div
       ref={containerRef}
       id="app-screens"
-      className="relative w-full overflow-hidden bg-gradient-to-b from-[#0D0D12] via-[#101017] to-[#0D0D12]"
+      className="relative w-full overflow-hidden bg-gradient-to-b from-[#F8F9FD] via-[#F1F4FA] to-[#F8F9FD] border-y border-border"
     >
       {/* Ambient background glows */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(234,128,80,0.06)_0%,rgba(219,66,185,0.04)_45%,transparent_75%)] blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(124,58,237,0.08)_0%,rgba(168,85,247,0.04)_45%,transparent_75%)] blur-[140px] pointer-events-none" />
 
       {/* FULL VIEWPORT ON DESKTOP, NATURAL FLOW ON MOBILE */}
       <div className="w-full relative lg:h-screen flex flex-col justify-center px-4 sm:px-6 max-w-7xl mx-auto z-10 select-none py-12 lg:py-0 overflow-hidden lg:overflow-visible">
@@ -257,11 +257,11 @@ export default function AppShowcase() {
           ref={heroContentRef}
           className="hidden lg:block absolute top-8 sm:top-12 left-0 right-0 text-center max-w-3xl mx-auto px-4 z-20 pointer-events-auto"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7C3AED]/10 text-accent text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7C3AED]/10 text-accent text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm border border-accent/20">
             Smart Grocery Intelligence
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-white mb-4 leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-text mb-4 leading-tight">
             The All-new AI Powered{" "}
             <GradientText className="font-serif italic">BestBasket is Here</GradientText>
           </h2>
@@ -274,7 +274,7 @@ export default function AppShowcase() {
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href="#download"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs text-white bg-white/10 hover:bg-white/15 border border-white/15 backdrop-blur-md transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-100 border border-slate-300 shadow-sm transition-all duration-300 hover:scale-105"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.94 2.74 1.01.08 2.03-.49 2.65-1.24" />
@@ -283,7 +283,7 @@ export default function AppShowcase() {
             </a>
             <a
               href="#download"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs text-white bg-white/10 hover:bg-white/15 border border-white/15 backdrop-blur-md transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-100 border border-slate-300 shadow-sm transition-all duration-300 hover:scale-105"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3.609 1.814L13.792 12 3.61 22.186a2.41 2.41 0 0 1-.61-.836c-.19-.44-.29-.915-.29-1.404V4.054c0-.49.1-1.01.29-1.45.16-.38.37-.62.61-.79zm11.233 11.234l2.585 2.585-11.8 6.772 9.215-9.357zm2.585-2.586l-2.585 2.586-9.215-9.358 11.8 6.772zm1.045 1.046l2.94 1.69a1.59 1.59 0 0 1 0 2.76l-2.94 1.69-2.096-2.07 2.096-2.07z" />
@@ -297,10 +297,10 @@ export default function AppShowcase() {
         {/* MOBILE SECTION HEADER (Shown on Mobile only)              */}
         {/* ========================================================= */}
         <div className="block lg:hidden text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7C3AED]/10 text-accent text-[11px] font-semibold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7C3AED]/10 text-accent text-[11px] font-semibold uppercase tracking-wider mb-3 border border-accent/20">
             Smart Grocery Intelligence
           </div>
-          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-white mb-2 leading-snug">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-text mb-2 leading-snug">
             The All-new AI Powered{" "}
             <GradientText className="font-serif italic">BestBasket</GradientText>
           </h2>
@@ -352,15 +352,15 @@ export default function AppShowcase() {
                     <span
                       className={`block text-[11px] sm:text-xs font-medium tracking-normal whitespace-nowrap transition-colors duration-300 ${
                         isActive
-                          ? "text-white font-semibold"
-                          : "text-text-muted/70 hover:text-white/80"
+                          ? "text-text font-bold"
+                          : "text-text-muted hover:text-text"
                       }`}
                     >
                       {tab.badge}
                     </span>
 
                     {/* Clean Progress Bar Under the Text */}
-                    <div className="absolute -bottom-[2px] inset-x-0 h-[1.5px] rounded-full bg-white/10 overflow-hidden">
+                    <div className="absolute -bottom-[2px] inset-x-0 h-[1.5px] rounded-full bg-slate-200 overflow-hidden">
                       {isActive && (
                         <div
                           className={`h-full bg-gradient-to-r from-[#7C3AED] to-[#A855F7] rounded-full shadow-[0_0_8px_rgba(124,58,237,0.5)] ${
@@ -387,7 +387,7 @@ export default function AppShowcase() {
               }`}
             >
               {/* Clean, Punchy Headline */}
-              <h3 className="font-serif text-2xl sm:text-3xl lg:text-5xl font-medium text-white mb-3 leading-tight break-words">
+              <h3 className="font-serif text-2xl sm:text-3xl lg:text-5xl font-medium text-text mb-3 leading-tight break-words">
                 {currentTab.title}{" "}
                 <GradientText className="font-serif italic inline">{currentTab.highlight}</GradientText>
               </h3>
@@ -440,13 +440,13 @@ export default function AppShowcase() {
               {/* CTA & PREV / NEXT NAVIGATION CONTROLS */}
               <div className="flex flex-wrap items-center gap-3 sm:gap-5">
                 {/* Previous and Next Carousel Arrows */}
-                <div className="flex items-center gap-2 pr-3 border-r border-white/10">
+                <div className="flex items-center gap-2 pr-3 border-r border-slate-200">
                   <button
                     type="button"
                     onClick={goToPrev}
                     title="Previous screen"
                     aria-label="Previous screen"
-                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-white/15 bg-white/5 hover:bg-white/15 hover:border-white/30 text-white flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer shadow-sm"
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-200 bg-white hover:bg-slate-100 hover:border-slate-300 text-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer shadow-sm"
                   >
                     <svg
                       width="16"
@@ -467,7 +467,7 @@ export default function AppShowcase() {
                     onClick={goToNext}
                     title="Next screen"
                     aria-label="Next screen"
-                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-white/15 bg-white/5 hover:bg-white/15 hover:border-white/30 text-white flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer shadow-sm"
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-200 bg-white hover:bg-slate-100 hover:border-slate-300 text-slate-700 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer shadow-sm"
                   >
                     <svg
                       width="16"
@@ -493,7 +493,7 @@ export default function AppShowcase() {
 
                 <a
                   href="#features"
-                  className="group inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-text-muted hover:text-white transition-colors"
+                  className="group inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-text-muted hover:text-text transition-colors"
                 >
                   <span>Learn more</span>
                   <svg
