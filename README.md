@@ -1,12 +1,12 @@
-# Wispry — Landing Page & Legal Portal
+# Best basket — Landing Page & Legal Portal
 
-A modern, high-performance, dark-mode landing page and documentation portal built for **Wispry** — a user rewards platform designed to help users monetize engagement, track real-time milestones, and build authentic communities.
+A modern, high-performance, dark-mode landing page and documentation portal built for **Best basket** — a user rewards platform designed to help users monetize engagement, track real-time milestones, and build authentic communities.
 
 ---
 
 ## ✨ Features & Architecture
 
-### 🚀 Landing Page Experience (`/`)
+### 🚀 Landing Page Experience (`/`)   
 
 - **Hero Section:** Elegant typography with animated word reveals, interactive floating SVG background particles, and liquid gradient CTA buttons.
 - **Features Grid:** 6 high-impact feature cards showcasing earnings, digital wallet, streak milestones, and analytics with subtle hover lighting.
