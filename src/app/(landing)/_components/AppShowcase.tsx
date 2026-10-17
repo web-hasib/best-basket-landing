@@ -11,49 +11,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 const appTabs = [
   {
-    id: "home",
-    badge: "Home Experience",
-    title: "Everything at a glance",
-    highlight: "in your pocket",
+    id: "smart-dashboard",
+    badge: "Smart Dashboard",
+    title: "Everything You Need",
+    highlight: "at a Glance",
     description:
-      "A complete user command center. View real-time wallet balances, trigger instant AI quotes, and track your daily streaks. See your journey unfold with every check-in.",
-    image: "/figma-app-19.png",
+      "Track your monthly grocery savings, access quick tools for meal planning and coupons, and get AI-powered smart insights on which local store will save you the most money this week.",
+    image: "/screens/Home.png",
   },
   {
-    id: "ai-quotes",
-    badge: "AI Quotes",
-    title: "Generate wisdom & unlock",
-    highlight: "bonus ads",
+    id: "price-comparison",
+    badge: "Price Comparison",
+    title: "Compare Prices Across",
+    highlight: "Local Stores",
     description:
-      "Craft bespoke quote cards, customize mindsets, and unlock bonus sponsor ads with a single tap to multiply your earnings. Spark your creativity with limitless inspiration.",
-    image: "/figma-app-33.png",
+      "Stop overpaying for groceries. Automatically compare your shopping list across up to 3 nearby stores like Walmart, Aldi, and Kroger side-by-side to instantly see which store gives you the highest total savings.",
+    image: "/screens/Groceries.png",
   },
   {
-    id: "ad-rewards",
-    badge: "Sponsored Rewards",
-    title: "Watch premium sponsor ads",
-    highlight: "and earn cash",
+    id: "best-prices",
+    badge: "Best Prices",
+    title: "Find the Lowest Prices",
+    highlight: "Near You",
     description:
-      "Earn guaranteed cash rewards directly into your balance for every sponsored brand display you engage with. Your engagement becomes instant income.",
-    image: "/figma-app-34.png",
+      "Search and browse daily essentials from milk and eggs to fresh meat. See the cheapest available prices at local stores near you and instantly add items to your cart to lock in the best deals.",
+    image: "/screens/Grocery.png",
   },
   {
-    id: "instant-payout",
-    badge: "Instant Cashout",
-    title: "Claim and withdraw",
-    highlight: "instantly",
+    id: "instant-coupons",
+    badge: "Instant Coupons",
+    title: "Find & Clip Store",
+    highlight: "Coupons Instantly",
     description:
-      "Celebrate your progress with flying cash rewards! Transparent micro-earnings that deposit directly into your connected account. Cash out your earnings anytime with a tap.",
-    image: "/figma-app-35.png",
+      "Browse verified deals and digital coupons from your favorite neighborhood stores. Clip them with a single tap and show them at checkout to stack extra savings on top of already low prices.",
+    image: "/screens/Coupons.png",
   },
   {
-    id: "streaks",
-    badge: "Gamified Progress",
-    title: "Build momentum with milestones",
-    highlight: "and badges",
+    id: "savings-intelligence",
+    badge: "Savings Intelligence",
+    title: "Track Your Savings &",
+    highlight: "Spending Habits",
     description:
-      "Unlock prestigious user badges, earn multiplier bonuses, and climb the community ranks as you stay consistent. Every login builds your legacy.",
-    image: "/figma-app-21.png",
+      "Visualize your monthly and yearly savings, review past grocery runs, and analyze your average spending by food category and store so you can shop smarter every month.",
+    image: "/screens/Savings.png",
   },
 ];
 
@@ -258,17 +258,17 @@ export default function AppShowcase() {
           className="hidden lg:block absolute top-8 sm:top-12 left-0 right-0 text-center max-w-3xl mx-auto px-4 z-20 pointer-events-auto"
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7C3AED]/10 text-accent text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
-            The all-new AI Powered Wispry
+            Smart Grocery Intelligence
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-white mb-4 leading-tight">
             The All-new AI Powered{" "}
-            <GradientText className="font-serif italic">Wispry is Here</GradientText>
+            <GradientText className="font-serif italic">BestBasket is Here</GradientText>
           </h2>
 
           <p className="text-text-muted text-sm sm:text-base max-w-xl mx-auto mb-6 leading-relaxed">
-            Experience a seamless, gamified user interface built to turn daily
-            mindset inspiration into real earnings.
+            Experience a seamless, intelligent shopping companion built to compare prices,
+            clip digital coupons, and maximize your weekly grocery savings.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -298,15 +298,15 @@ export default function AppShowcase() {
         {/* ========================================================= */}
         <div className="block lg:hidden text-center mb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7C3AED]/10 text-accent text-[11px] font-semibold uppercase tracking-wider mb-3">
-            The all-new AI Powered Wispry
+            Smart Grocery Intelligence
           </div>
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-white mb-2 leading-snug">
             The All-new AI Powered{" "}
-            <GradientText className="font-serif italic">Wispry</GradientText>
+            <GradientText className="font-serif italic">BestBasket</GradientText>
           </h2>
           <p className="text-text-muted text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
-            Experience a seamless, gamified user interface built to turn daily
-            mindset inspiration into real earnings.
+            Experience a seamless, intelligent shopping companion built to compare prices,
+            clip digital coupons, and maximize your weekly grocery savings.
           </p>
         </div>
 
@@ -389,7 +389,7 @@ export default function AppShowcase() {
               {/* Clean, Punchy Headline */}
               <h3 className="font-serif text-2xl sm:text-3xl lg:text-5xl font-medium text-white mb-3 leading-tight break-words">
                 {currentTab.title}{" "}
-                <GradientText className="font-serif italic inline">{currentTab.highlight}!</GradientText>
+                <GradientText className="font-serif italic inline">{currentTab.highlight}</GradientText>
               </h3>
 
               <p className="text-text-muted text-xs sm:text-sm lg:text-base leading-relaxed mb-6 max-w-lg min-h-[44px] break-words">
@@ -576,7 +576,7 @@ export default function AppShowcase() {
         </div>
         {/* Search Engine Crawlable Content for All App Showcase Tabs */}
         <div className="sr-only">
-          <h2>Wispry Application Features & App Screens</h2>
+          <h2>BestBasket Application Features & App Screens</h2>
           {appTabs.map((tab) => (
             <article key={tab.id}>
               <h3>

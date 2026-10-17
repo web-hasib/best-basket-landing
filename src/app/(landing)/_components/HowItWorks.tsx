@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 const steps = [
   {
     number: "01",
-    title: "Create your account",
+    title: "Build Your Grocery List",
     description:
-      "Sign up in seconds with just your email. Set up your user profile and immediately get access to daily earning opportunities.",
+      "Search and add daily essentials or browse categories. BestBasket automatically finds available prices across nearby stores.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -21,27 +21,27 @@ const steps = [
         <path d="m16 11 2 2 4-4" />
       </svg>
     ),
-    badge: "Quick Setup",
+    badge: "Quick Search",
     color: "#7C3AED",
   },
   {
     number: "02",
-    title: "Engage & unlock rewards",
+    title: "Compare & Clip Coupons",
     description:
-      "Generate inspiring daily AI quotes and view sponsored brand cards to build your streaks and multiply your daily bonus earnings.",
+      "Compare your cart side-by-side across stores like Walmart, Aldi, and Kroger, and clip instant digital coupons with one tap.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z" />
       </svg>
     ),
-    badge: "Daily Boost",
+    badge: "Instant Deals",
     color: "#A855F7",
   },
   {
     number: "03",
-    title: "Instant cashout",
+    title: "Save Big & Track Habits",
     description:
-      "Watch your wallet balance stack up with transparent accounting. Withdraw anytime straight to your connected bank or card with zero delay.",
+      "Checkout with confidence knowing you got the lowest price in town. Watch your monthly and yearly savings add up automatically.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect width="20" height="14" x="2" y="5" rx="2" />
@@ -50,7 +50,7 @@ const steps = [
         <path d="m19 2-3 3 3 3" />
       </svg>
     ),
-    badge: "Zero Delay",
+    badge: "Smart Savings",
     color: "#8B5CF6",
   },
 ];
@@ -112,8 +112,8 @@ export default function HowItWorks() {
         <div className="text-center mb-20 sm:mb-24">
           <SectionHeading
             label="How it works"
-            title="Three simple steps to start earning"
-            description="Getting started with Wispry is fast and straightforward. No complicated setup."
+            title="Three Simple Steps to Smarter Shopping"
+            description="Start saving hundreds on your monthly grocery bill with BestBasket in minutes."
           />
         </div>
 

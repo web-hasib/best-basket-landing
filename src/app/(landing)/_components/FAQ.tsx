@@ -15,34 +15,34 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "What is Wispry and how does it work?",
+    question: "What is BestBasket and how does it work?",
     answer:
-      "Wispry is a rewards and wellness platform that helps you generate personalized AI quotes, build daily motivational streaks, and earn rewards through verified community engagement and user challenges.",
+      "BestBasket is an intelligent grocery shopping assistant. It automatically compares prices for items on your shopping list across local grocery stores like Walmart, Aldi, and Kroger, helping you instantly find the biggest total savings.",
   },
   {
-    question: "How do I earn and withdraw rewards?",
+    question: "How do store coupons and discounts work?",
     answer:
-      "You earn rewards by completing daily challenges, sharing inspirational content, and maintaining consistent streaks. Once your earnings reach the minimum payout threshold, you can seamlessly withdraw funds to your linked bank account or digital wallet.",
+      "BestBasket compiles verified store coupons and digital manufacturer discounts. You can clip them with a single tap in the app and easily redeem them during checkout at participating stores to maximize your savings.",
   },
   {
-    question: "Is the app completely free to use?",
+    question: "Is BestBasket free to use?",
     answer:
-      "Yes. Downloading and getting started on Wispry is 100% free. You can explore daily AI prompts, track your milestones, and participate in community challenges without any upfront cost or subscription requirements.",
+      "Yes! Downloading and using BestBasket to compare prices, browse daily deals, clip coupons, and track your grocery savings is 100% free with no hidden fees or subscriptions required.",
   },
   {
-    question: "How does the AI quote generator work?",
+    question: "Which grocery stores are supported?",
     answer:
-      "Our built-in AI models analyze your chosen tone, focus topics, and aesthetic style to craft thoughtful, one-of-a-kind quotes with beautiful typography formatted ready to share across your socials.",
+      "BestBasket supports major national and regional supermarket chains, including Walmart, Aldi, Kroger, Target, and more. We continuously add new regional stores and local grocers based on user demand.",
   },
   {
     question: "Which devices and platforms are currently supported?",
     answer:
-      "Wispry is currently optimized for iOS on iPhone devices via the Apple App Store. An Android release is actively in development and will be available soon.",
+      "BestBasket is currently designed and optimized for mobile devices. Stay tuned for both iOS and Android app releases, along with web access.",
   },
   {
-    question: "How are my data and transactions secured?",
+    question: "How are my data and privacy protected?",
     answer:
-      "We apply end-to-end data encryption, strict identity verification, and privacy-first protocols. We never sell your personal information or share payment credentials with unauthorized third parties.",
+      "We apply industry-standard security and strict privacy protocols. Your personal grocery lists and shopping habits are kept confidential and are never sold to unauthorized third parties.",
   },
 ];
 
@@ -208,8 +208,8 @@ export default function FAQ() {
         <div className="faq-header mb-12 sm:mb-16">
           <SectionHeading
             label="FAQ"
-            title="Frequently asked questions"
-            description="Find clear answers to common questions about using Wispry, earning rewards, and getting started."
+            title="Frequently Asked Questions"
+            description="Find clear answers to common questions about using BestBasket to save money on groceries."
           />
         </div>
 

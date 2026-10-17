@@ -14,15 +14,14 @@ export default function CTA() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-[#7C3AED]/15 blur-[140px] rounded-full pointer-events-none" />
 
             <h2 className="relative text-3xl md:text-5xl font-bold mb-6 text-text">
-              Ready to <GradientText>start earning</GradientText>?
+              Ready to <GradientText>start saving</GradientText>?
             </h2>
             <p className="relative text-text-muted text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Join thousands of users who are already building their
-              community and earning rewards on Wispry.
+              Join thousands of smart shoppers who compare prices, clip digital coupons, and save money every week with BestBasket.
             </p>
             <div className="relative flex flex-wrap justify-center gap-4">
-              <Button href="#" size="lg">
-                Create free account
+              <Button href="#app-screens" size="lg">
+                Explore BestBasket
               </Button>
               <Button href="#features" variant="ghost" size="lg">
                 Learn more

@@ -279,10 +279,9 @@ export default function Hero() {
           <div className="mb-6">
             <span
               data-hero-label
-              className="inline-flex items-center gap-2 text-xs font-semibold text-accent bg-accent/4 px-4 py-1.5 rounded-full   backdrop-blur-md"
+              className="inline-flex items-center gap-2 text-xs font-semibold text-accent bg-accent/10 px-4 py-1.5 rounded-full border border-accent/20 backdrop-blur-md"
             >
-              
-              Rewards platform for users
+              Smart Grocery Savings & Intelligence
             </span>
           </div>
 
@@ -292,7 +291,7 @@ export default function Hero() {
             className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.12] mb-6 tracking-tight perspective-[1000px]"
           >
             <span className="block mb-1">
-              {["Earn", "rewards."].map((word, i) => (
+              {["Save", "More."].map((word, i) => (
                 <span
                   key={i}
                   data-hero-word
@@ -301,15 +300,9 @@ export default function Hero() {
                   {word}
                 </span>
               ))}
-              {/* <span
-                data-hero-word
-                className="inline-block italic font-light font-serif mr-[0.28em] text-white/90 will-change-transform"
-              >
-                ""
-              </span> */}
             </span>
             <span className="block">
-              {[`"Empower your`, `everyday life"`].map((word, i) => (
+              {[`"On Every`, `Grocery Run"`].map((word, i) => (
                 <span
                   key={i}
                   data-hero-word
@@ -326,8 +319,7 @@ export default function Hero() {
             data-hero-desc
             className="text-text-muted text-base sm:text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl mx-auto font-normal"
           >
-            A bespoke mobile experience crafted for users. Earn rewards on daily
-            inspiration, track your streaks, and unlock milestones right from your pocket.
+            Compare grocery prices across your favorite local stores, clip digital coupons with a tap, and optimize your monthly budget effortlessly with AI-powered insights.
           </p>
 
           {/* Action CTAs */}
@@ -339,7 +331,7 @@ export default function Hero() {
             </div>
             <div data-hero-btn>
               <Button href="#features" variant="ghost" size="lg">
-                See how it works
+                See How It Works
               </Button>
             </div>
           </div>

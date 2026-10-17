@@ -61,7 +61,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <Image
-                src="/logo.png"
+                src="/logo_full.png"
                 alt="BestBasket logo"
                 width={170}
                 height={40}
@@ -69,8 +69,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-text-muted text-sm leading-relaxed max-w-xs mb-6">
-              Empowering users to earn rewards and build meaningful
-              communities. Join thousands who are already growing with us.
+              Compare grocery prices, discover verified store coupons, and track your monthly savings with BestBasket.
             </p>
             <div className="flex gap-4">
               {socialIcons.map((social) => (
@@ -124,10 +123,10 @@ export default function Footer() {
         {/* bottom */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-dim">
-            © {new Date().getFullYear()} Wispry. All rights reserved.
+            © {new Date().getFullYear()} BestBasket. All rights reserved.
           </p>
           <p className="text-xs text-text-dim">
-            Built with care for users everywhere.
+            Smart Grocery Savings & Intelligence.
           </p>
         </div>
       </div>

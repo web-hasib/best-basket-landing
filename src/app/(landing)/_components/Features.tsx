@@ -30,9 +30,9 @@ const features = [
       </svg>
     ),
     glowColor: "hover:border-[#7C3AED]/30 hover:shadow-[0_4px_20px_rgba(124,58,237,0.12)]",
-    title: "Earnings & wallet",
+    title: "Real-Time Price Comparison",
     description:
-      "Track your earnings in real time with a built-in digital wallet. Withdraw anytime with flexible payout options.",
+      "Compare prices across Walmart, Aldi, Kroger, and more in real time. Choose the store that saves you the most on your total cart.",
   },
   {
     // Fancy Multi-layer Trophy Shield & Gamified Star Badge SVG with gradient
@@ -69,9 +69,9 @@ const features = [
       </svg>
     ),
     glowColor: "hover:border-[#A855F7]/30 hover:shadow-[0_4px_20px_rgba(168,85,247,0.12)]",
-    title: "Badges & achievements",
+    title: "Instant Digital Coupons",
     description:
-      "Unlock exclusive badges as you hit milestones. Show off your progress and build credibility in the community.",
+      "Find verified local store coupons and manufacturer discounts with a single tap. Clip and stack savings directly at checkout.",
   },
   {
     // Fancy Interconnected User Hub / Constellation Network SVG with gradient
@@ -106,9 +106,9 @@ const features = [
       </svg>
     ),
     glowColor: "hover:border-[#06B6D4]/20 hover:shadow-[0_4px_20px_rgba(6,182,212,0.06)]",
-    title: "Community support",
+    title: "Savings Intelligence",
     description:
-      "Connect with like-minded users. Share strategies, support each other, and grow your network together.",
+      "Visualize your monthly grocery savings, review past shopping runs, and discover smart budget recommendations.",
   },
 ];
 
@@ -119,8 +119,8 @@ export default function Features() {
         <AnimatedSection>
           <SectionHeading
             label="Features"
-            title="Everything you need to succeed"
-            description="Powerful tools designed to help users earn more and build stronger communities."
+            title="Everything You Need to Save on Groceries"
+            description="Intelligent tools designed to make smart grocery shopping effortless, transparent, and rewarding."
             className="mb-10 sm:mb-12"
           />
         </AnimatedSection>

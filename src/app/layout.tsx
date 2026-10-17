@@ -23,44 +23,44 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wispry.com"),
+  metadataBase: new URL("https://bestbasket.app"),
   title: {
-    default: "Wispry — Earn rewards. Build your community.",
-    template: "%s | Wispry",
+    default: "BestBasket — Smart Grocery Savings & Price Comparison",
+    template: "%s | BestBasket",
   },
   description:
-    "A rewards platform designed to help users monetize engagement, track real-time analytics, and build authentic communities.",
+    "Compare grocery prices across nearby stores, find and clip digital coupons instantly, and maximize your monthly grocery savings with BestBasket.",
   keywords: [
-    "user rewards",
-    "community building",
-    "earn rewards",
-    "monetization for users",
-    "rewards platform",
-    "Wispry",
-    "iOS app",
-    "App Store rewards app",
+    "grocery savings",
+    "price comparison",
+    "grocery coupons",
+    "supermarket deals",
+    "Walmart vs Aldi",
+    "BestBasket",
+    "grocery app",
+    "save money on groceries",
   ],
-  authors: [{ name: "Wispry Team", url: "https://wispry.com" }],
-  creator: "Wispry",
-  publisher: "Wispry",
+  authors: [{ name: "BestBasket Team", url: "https://bestbasket.app" }],
+  creator: "BestBasket",
+  publisher: "BestBasket",
   category: "lifestyle",
   alternates: {
-    canonical: "https://wispry.com",
+    canonical: "https://bestbasket.app",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://wispry.com",
-    title: "Wispry — Earn rewards. Build your community.",
+    url: "https://bestbasket.app",
+    title: "BestBasket — Smart Grocery Savings & Price Comparison",
     description:
-      "A platform where users earn real rewards by engaging with their community. Track your earnings, unlock achievements, and grow together.",
-    siteName: "Wispry",
+      "Stop overpaying for groceries. Compare shopping lists across local stores, clip instant coupons, and track your monthly savings with BestBasket.",
+    siteName: "BestBasket",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wispry — Earn rewards. Build your community.",
+    title: "BestBasket — Smart Grocery Savings & Price Comparison",
     description:
-      "Earn real rewards by engaging with your community.",
+      "Compare grocery prices across local stores and clip instant digital coupons.",
   },
   robots: {
     index: true,
@@ -78,38 +78,33 @@ export const metadata: Metadata = {
 const jsonLdWebsite = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Wispry",
-  url: "https://wispry.com",
+  name: "BestBasket",
+  url: "https://bestbasket.app",
   description:
-    "A rewards platform designed to help users monetize engagement and build authentic communities.",
+    "Smart grocery comparison platform helping shoppers compare prices, clip instant coupons, and track savings.",
 };
 
 const jsonLdOrganization = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Wispry",
-  url: "https://wispry.com",
-  logo: "https://wispry.com/logo.png",
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "Dlovett2019@gmail.com",
-    contactType: "customer service",
-  },
+  name: "BestBasket",
+  url: "https://bestbasket.app",
+  logo: "https://bestbasket.app/logo_full.png",
 };
 
 const jsonLdApp = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
-  name: "Wispry",
+  name: "BestBasket",
   operatingSystem: "iOS, Android",
-  applicationCategory: "LifestyleApplication",
+  applicationCategory: "ShoppingApplication",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
   },
   description:
-    "Turn daily inspiration into real earnings with AI quote generation, streak milestones, and sponsored rewards.",
+    "Compare prices across Walmart, Aldi, and Kroger, clip verified digital store coupons, and track your grocery savings.",
 };
 
 const jsonLdFaq = {

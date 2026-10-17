@@ -8,10 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: 12400, suffix: "+", label: "Active users" },
-  { value: 2.8, suffix: "M", label: "Total earned", prefix: "$", decimals: 1 },
-  { value: 98, suffix: "%", label: "Satisfaction rate" },
-  { value: 45, suffix: "+", label: "Countries" },
+  { value: 25000, suffix: "+", label: "Smart Shoppers" },
+  { value: 3.4, suffix: "M", label: "Grocery Savings", prefix: "$", decimals: 1 },
+  { value: 99.2, suffix: "%", label: "Price Accuracy", decimals: 1 },
+  { value: 120, suffix: "+", label: "Supported Stores" },
 ];
 
 export default function Stats() {

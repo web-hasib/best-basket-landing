@@ -10,11 +10,11 @@ import CTA from "./(landing)/_components/CTA";
 import Footer from "./(landing)/_components/Footer";
 
 export const metadata: Metadata = {
-  title: "Wispry — Earn rewards. Empower your everyday life.",
+  title: "BestBasket — Smart Grocery Savings & Price Comparison",
   description:
-    "A rewards platform designed to help users monetize engagement, track real-time analytics, and build authentic communities.",
+    "Compare grocery prices across nearby stores, clip verified digital coupons, and maximize your family savings with BestBasket.",
   alternates: {
-    canonical: "https://wispry.com",
+    canonical: "https://bestbasket.app",
   },
 };
 
