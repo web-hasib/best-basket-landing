@@ -1,0 +1,22 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="sparkleGrad" x1="20" y1="4" x2="36" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C084FC"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized Shopping Cart Body -->
+  <path d="M6 10H10.5L14.2 24.5C14.4 25.3 15.1 25.8 15.9 25.8H28.8C29.6 25.8 30.3 25.3 30.5 24.5L33.5 13.8C33.7 13.1 33.2 12.4 32.5 12.4H11.5" 
+        stroke="url(#logoGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Front Wheel -->
+  <circle cx="17" cy="31" r="2.4" fill="url(#logoGrad)" />
+  <!-- Rear Wheel -->
+  <circle cx="28" cy="31" r="2.4" fill="url(#logoGrad)" />
+  <!-- Smart Sparkle / Genius Star inside/above cart -->
+  <path d="M22 6C22 9.5 24.5 12 28 12C24.5 12 22 14.5 22 18C22 14.5 19.5 12 16 12C19.5 12 22 9.5 22 6Z" 
+        fill="url(#sparkleGrad)" />
+</svg>
