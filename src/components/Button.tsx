@@ -27,7 +27,7 @@ export default function Button({
 
   const variants: Record<string, string> = {
     primary:
-      "btn-primary-animated text-white hover:opacity-95 shadow-sm active:scale-[0.98]",
+      "btn-primary-animated !text-white active:scale-[0.98]",
     ghost:
       "btn-ghost text-text-muted hover:text-text active:scale-[0.98]",
   };

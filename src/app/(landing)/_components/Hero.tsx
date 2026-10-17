@@ -171,8 +171,8 @@ export default function Hero() {
           </defs>
         </svg>
 
-        {/* Realistic 3D Object 1: Hyper-Detailed Metallic Chrome Violet Shopping Cart (Top Left) - 50% Scaled */}
-        <div className="hero-3d-cart absolute top-[12%] left-[4%] sm:left-[8%] lg:left-[10%] w-[90px] sm:w-[115px] lg:w-[135px] pointer-events-none drop-shadow-[0_15px_25px_rgba(124,58,237,0.18)] will-change-transform z-0">
+        {/* Realistic 3D Object 1: Hyper-Detailed Metallic Chrome Violet Shopping Cart (Top Left) - Moved Closer */}
+        <div className="hero-3d-cart absolute top-[16%] left-[10%] sm:left-[14%] lg:left-[17%] w-[95px] sm:w-[120px] lg:w-[140px] pointer-events-none drop-shadow-[0_15px_25px_rgba(124,58,237,0.18)] will-change-transform z-0">
           <Image
             src="/hero-cart-groceries.png"
             alt="BestBasket 3D grocery cart"
@@ -183,8 +183,8 @@ export default function Hero() {
           />
         </div>
 
-        {/* Realistic 3D Object 2: Sleek Minimal Violet Coupon Ticket (Top Right) - 50% Scaled */}
-        <div className="hero-3d-coupon absolute top-[14%] right-[4%] sm:right-[8%] lg:right-[10%] w-[80px] sm:w-[105px] lg:w-[125px] pointer-events-none drop-shadow-[0_15px_25px_rgba(168,85,247,0.20)] will-change-transform z-0">
+        {/* Realistic 3D Object 2: Sleek Minimal Violet Coupon Ticket (Top Right) - Moved Closer */}
+        <div className="hero-3d-coupon absolute top-[18%] right-[10%] sm:right-[14%] lg:right-[17%] w-[85px] sm:w-[110px] lg:w-[130px] pointer-events-none drop-shadow-[0_15px_25px_rgba(168,85,247,0.20)] will-change-transform z-0">
           <Image
             src="/hero-coupon-clean.png"
             alt="BestBasket 3D grocery voucher coupon"
@@ -195,8 +195,8 @@ export default function Hero() {
           />
         </div>
 
-        {/* Realistic 3D Object 3: 3D Luxury Sale Price Tag (Bottom Left) - Scaled */}
-        <div className="hero-3d-tag hidden md:block absolute bottom-[10%] left-[8%] lg:left-[12%] w-[80px] lg:w-[100px] pointer-events-none drop-shadow-[0_15px_25px_rgba(168,85,247,0.18)] will-change-transform z-0">
+        {/* Realistic 3D Object 3: 3D Luxury Sale Price Tag (Bottom Left) - Moved Closer */}
+        <div className="hero-3d-tag hidden md:block absolute bottom-[14%] left-[12%] lg:left-[18%] w-[85px] lg:w-[105px] pointer-events-none drop-shadow-[0_15px_25px_rgba(168,85,247,0.18)] will-change-transform z-0">
           <Image
             src="/hero-left-tag-clean.png"
             alt="BestBasket 3D discount price tag"
@@ -206,8 +206,8 @@ export default function Hero() {
           />
         </div>
 
-        {/* Realistic 3D Object 4: 3D Smart Grocery Receipt (Bottom Right) - Scaled */}
-        <div className="hero-3d-receipt hidden md:block absolute bottom-[10%] right-[8%] lg:right-[12%] w-[80px] lg:w-[105px] pointer-events-none drop-shadow-[0_15px_25px_rgba(15,23,42,0.14)] will-change-transform z-0">
+        {/* Realistic 3D Object 4: 3D Smart Grocery Receipt (Bottom Right) - Moved Closer */}
+        <div className="hero-3d-receipt hidden md:block absolute bottom-[14%] right-[12%] lg:right-[18%] w-[85px] lg:w-[110px] pointer-events-none drop-shadow-[0_15px_25px_rgba(15,23,42,0.14)] will-change-transform z-0">
           <Image
             src="/hero-receipt.png"
             alt="BestBasket 3D grocery savings receipt"
@@ -227,7 +227,7 @@ export default function Hero() {
           <div className="mb-6">
             <span
               data-hero-label
-              className="inline-flex items-center gap-2 text-xs font-semibold text-accent bg-accent/10 px-4 py-1.5 rounded-full border border-accent/20 backdrop-blur-md"
+              className="inline-flex items-center gap-2 text-xs font-semibold text-accent bg-accent/5 px-4 py-1.5 rounded-full border border-accent/2 backdrop-blur-sm"
             >
               Smart Grocery Savings & Intelligence
             </span>
@@ -249,16 +249,15 @@ export default function Hero() {
                 </span>
               ))}
             </span>
-            <span className="block">
-              {[`"On Every`, `Grocery Run"`].map((word, i) => (
-                <span
-                  key={i}
-                  data-hero-word
-                  className="inline-block mr-[0.28em] will-change-transform italic font-serif"
-                >
-                  <GradientText className="font-serif italic font-medium">{word}</GradientText>
-                </span>
-              ))}
+            <span className="block overflow-visible py-1">
+              <span
+                data-hero-word
+                className="inline-block will-change-transform italic font-serif px-2 overflow-visible"
+              >
+                <GradientText className="font-serif italic font-medium inline-block pr-[0.15em] overflow-visible">
+                  &ldquo;On Every Grocery Run&rdquo;
+                </GradientText>
+              </span>
             </span>
           </h1>
 
