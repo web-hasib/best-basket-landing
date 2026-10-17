@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GradientText from "@/components/GradientText";
+import { useEarlyAccess } from "@/components/EarlyAccessModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,6 +61,7 @@ const appTabs = [
 const TAB_DURATION_MS = 5000; // 5 seconds per tab slide
 
 export default function AppShowcase() {
+  const { openModal } = useEarlyAccess();
   const containerRef = useRef<HTMLDivElement>(null);
   const heroContentRef = useRef<HTMLDivElement>(null);
   const phoneSlotLeftRef = useRef<HTMLDivElement>(null);
@@ -272,24 +274,37 @@ export default function AppShowcase() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="#download"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-100 border border-slate-300 shadow-sm transition-all duration-300 hover:scale-105"
+            <button
+              type="button"
+              onClick={() => openModal("App Store")}
+              className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-50 border border-slate-200 shadow-sm transition-all duration-300 hover:scale-105 cursor-pointer"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.94 2.74 1.01.08 2.03-.49 2.65-1.24" />
-              </svg>
+              <Image
+                src="/apple-icon.png"
+                alt="App Store"
+                width={18}
+                height={18}
+                className="w-4 h-4 object-contain"
+              />
               <span>App Store</span>
-            </a>
-            <a
-              href="#download"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-100 border border-slate-300 shadow-sm transition-all duration-300 hover:scale-105"
+            </button>
+            <button
+              type="button"
+              onClick={() => openModal("Google Play")}
+              className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-50 border border-slate-200 shadow-sm transition-all duration-300 hover:scale-105 cursor-pointer"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186a2.41 2.41 0 0 1-.61-.836c-.19-.44-.29-.915-.29-1.404V4.054c0-.49.1-1.01.29-1.45.16-.38.37-.62.61-.79zm11.233 11.234l2.585 2.585-11.8 6.772 9.215-9.357zm2.585-2.586l-2.585 2.586-9.215-9.358 11.8 6.772zm1.045 1.046l2.94 1.69a1.59 1.59 0 0 1 0 2.76l-2.94 1.69-2.096-2.07 2.096-2.07z" />
+              {/* Colorful Google Play official 4-color triangle logo */}
+              <svg width="18" height="18" viewBox="0 0 512 512">
+                <path d="M48.2 26.4C44.6 30.6 42.7 36.6 42.7 44.5v423c0 7.9 1.9 13.9 5.5 18.1l2.4 2.2L278.4 260v-8L50.6 24.2l-2.4 2.2z" fill="#00C1A6"/>
+                <path d="M356.9 338.4l-78.5-78.4v-8l78.5-78.4 1.8 1 93 52.8c26.5 15 26.5 39.7 0 54.8l-93 52.8-1.8 3.4z" fill="#FFD400"/>
+                <path d="M278.4 252L50.6 24.2C54.8 19.8 62.5 17 72.8 22.8l284.1 161.4-78.5 67.8z" fill="#00E676"/>
+                <path d="M278.4 260l78.5 78.4-284.1 161.4c-10.3 5.8-18 3-22.2-1.4L278.4 260z" fill="#FF334B"/>
+                <path d="M355.1 335l-76.7-76.7v-6.3l76.7-76.7 1.8 1 93 52.8c12.2 6.9 18.8 16.3 18.8 25.7s-6.6 18.8-18.8 25.7l-93 52.8-1.8-4.6z" fill="#FFC400"/>
+                <path d="M50.6 485.6c-4.2-4.4-6.3-10.7-6.3-18.1v-4c0 7.4 2.1 13.7 6.3 18.1l2.4-2.2-2.4 6.2z" fill="#1A237E" opacity=".2"/>
+                <path d="M449.9 282.8l-94.8 53.8 1.8 3.4 93-52.8c13.2-7.5 19.8-17.5 19.8-27.4-.6 9.4-7.2 18.2-19.8 23z" fill="#BF360C" opacity=".12"/>
               </svg>
               <span>Google Play</span>
-            </a>
+            </button>
           </div>
         </div>
 
@@ -304,10 +319,43 @@ export default function AppShowcase() {
             The All-new AI Powered{" "}
             <GradientText className="font-serif italic">BestBasket</GradientText>
           </h2>
-          <p className="text-text-muted text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
+          <p className="text-text-muted text-xs sm:text-sm max-w-md mx-auto leading-relaxed mb-5">
             Experience a seamless, intelligent shopping companion built to compare prices,
             clip digital coupons, and maximize your weekly grocery savings.
           </p>
+
+          {/* Mobile Download Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5">
+            <button
+              type="button"
+              onClick={() => openModal("App Store")}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-50 border border-slate-200 shadow-sm transition-all duration-300 active:scale-95 cursor-pointer"
+            >
+              <Image
+                src="/apple-icon.png"
+                alt="App Store"
+                width={16}
+                height={16}
+                className="w-4 h-4 object-contain"
+              />
+              <span>App Store</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => openModal("Google Play")}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-xs text-text bg-white hover:bg-slate-50 border border-slate-200 shadow-sm transition-all duration-300 active:scale-95 cursor-pointer"
+            >
+              {/* Colorful Google Play official 4-color triangle logo */}
+              <svg width="18" height="18" viewBox="0 0 512 512">
+                <path d="M48.2 26.4C44.6 30.6 42.7 36.6 42.7 44.5v423c0 7.9 1.9 13.9 5.5 18.1l2.4 2.2L278.4 260v-8L50.6 24.2l-2.4 2.2z" fill="#00C1A6"/>
+                <path d="M356.9 338.4l-78.5-78.4v-8l78.5-78.4 1.8 1 93 52.8c26.5 15 26.5 39.7 0 54.8l-93 52.8-1.8 3.4z" fill="#FFD400"/>
+                <path d="M278.4 252L50.6 24.2C54.8 19.8 62.5 17 72.8 22.8l284.1 161.4-78.5 67.8z" fill="#00E676"/>
+                <path d="M278.4 260l78.5 78.4-284.1 161.4c-10.3 5.8-18 3-22.2-1.4L278.4 260z" fill="#FF334B"/>
+                <path d="M355.1 335l-76.7-76.7v-6.3l76.7-76.7 1.8 1 93 52.8c12.2 6.9 18.8 16.3 18.8 25.7s-6.6 18.8-18.8 25.7l-93 52.8-1.8-4.6z" fill="#FFC400"/>
+              </svg>
+              <span>Google Play</span>
+            </button>
+          </div>
         </div>
 
         {/* ========================================================= */}

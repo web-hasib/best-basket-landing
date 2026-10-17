@@ -1,8 +1,13 @@
+"use client";
+
 import AnimatedSection from "@/components/AnimatedSection";
 import Button from "@/components/Button";
 import GradientText from "@/components/GradientText";
+import { useEarlyAccess } from "@/components/EarlyAccessModal";
 
 export default function CTA() {
+  const { openModal } = useEarlyAccess();
+
   return (
     <section id="cta" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -20,11 +25,11 @@ export default function CTA() {
               Join thousands of smart shoppers who compare prices, clip digital coupons, and save money every week with BestBasket.
             </p>
             <div className="relative flex flex-wrap justify-center gap-4">
-              <Button href="#app-screens" size="lg">
-                Explore BestBasket
+              <Button onClick={() => openModal("Mobile App")} size="lg">
+                Download BestBasket
               </Button>
-              <Button href="#features" variant="ghost" size="lg">
-                Learn more
+              <Button href="/early-access" variant="ghost" size="lg">
+                Get Early Access
               </Button>
             </div>
           </div>

@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/components/Button";
+import { useEarlyAccess } from "@/components/EarlyAccessModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +21,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const { openModal } = useEarlyAccess();
   const navRef = useRef<HTMLElement>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -87,7 +89,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button href="/#cta" size="sm">
+          <Button onClick={() => openModal("Navbar")} size="sm">
             Get started
           </Button>
         </div>
@@ -134,9 +136,11 @@ export default function Navbar() {
             </Link>
           ))}
           <Button
-            href="/#cta"
             size="sm"
-            onClick={() => setMobileOpen(false)}
+            onClick={() => {
+              setMobileOpen(false);
+              openModal("Navbar Mobile");
+            }}
           >
             Get started
           </Button>

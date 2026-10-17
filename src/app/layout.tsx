@@ -162,13 +162,15 @@ const jsonLdFaq = {
   ],
 };
 
+import { EarlyAccessProvider } from "@/components/EarlyAccessModal";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${sans.variable} ${fontDisplay.variable}`}>
+    <html lang="en" className={`light ${sans.variable} ${fontDisplay.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -190,7 +192,9 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased bg-bg text-text min-h-screen font-sans">
-        {children}
+        <EarlyAccessProvider>
+          {children}
+        </EarlyAccessProvider>
       </body>
     </html>
   );
