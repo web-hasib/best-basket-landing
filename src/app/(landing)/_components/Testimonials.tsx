@@ -11,24 +11,24 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonials = [
   {
     quote:
-      "Wispry completely changed how I stay motivated and earn daily. The app interface is clean and gorgeous, and tracking my progress with badges is so addictive!",
+      "BestBasket completely changed how I plan our weekly grocery runs. Comparing Aldi and Walmart prices side-by-side saves my family over $120 every single month!",
     name: "Sarah Chen",
-    role: "Community Member",
-    tag: "Power User",
+    role: "Savvy Shopper",
+    tag: "Verified Saver",
   },
   {
     quote:
-      "Generating daily AI quotes and unlocking sponsored rewards right from my phone is effortless. The user experience is super smooth and genuinely rewarding.",
+      "Clipping digital manufacturer coupons with a single tap and finding the lowest egg and milk prices near me is effortless. The user experience is buttery smooth.",
     name: "Marcus Johnson",
-    role: "Daily Earner",
+    role: "Weekly Shopper",
     tag: "Active User",
   },
   {
     quote:
-      "The app interface is really beautiful and intuitive to use. Claiming rewards is seamless, cashouts are fast, and everything works right out of the pocket.",
+      "The app interface is really clean and intuitive. The price comparison breakdowns are instant, store directions are accurate, and it actually saves real money at checkout.",
     name: "Amara Osei",
-    role: "Digital Artist",
-    tag: "Verified User",
+    role: "Budget Planner",
+    tag: "Power User",
   },
 ];
 
@@ -149,8 +149,8 @@ export default function Testimonials() {
         <div className="testimonial-header mb-16 text-center">
           <SectionHeading
             label="Testimonials"
-            title="Loved by users worldwide"
-            description="Don't take our word for it. Here's what real community members love about using Wispry."
+            title="Loved by shoppers nationwide"
+            description="Don't take our word for it. Here's what smart shoppers love about using BestBasket."
           />
         </div>
 

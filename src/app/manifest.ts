@@ -2,14 +2,14 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Wispry — User Rewards Platform",
-    short_name: "Wispry",
+    name: "BestBasket — Smart Grocery Savings & Price Comparison",
+    short_name: "BestBasket",
     description:
-      "A platform where users earn real rewards by engaging with their community, tracking daily milestones, and unlocking sponsored bonuses.",
+      "Compare local grocery prices, clip digital coupons, and maximize your weekly grocery savings with AI-powered insights.",
     start_url: "/",
     display: "standalone",
-    background_color: "#0D0D12",
-    theme_color: "#0D0D12",
+    background_color: "#F8F9FD",
+    theme_color: "#7C3AED",
     icons: [
       {
         src: "/favicon.ico",
