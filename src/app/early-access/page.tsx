@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import confetti from "canvas-confetti";
 import GradientText from "@/components/GradientText";
 
 import FormInput from "@/components/FormInput";
@@ -20,6 +21,28 @@ export default function EarlyAccessPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  const triggerSprinkles = () => {
+    // Top-down colorful celebration sprinkles
+    const count = 200;
+    const defaults = {
+      origin: { y: 0.1 },
+      colors: ["#7C3AED", "#A855F7", "#3B82F6", "#10B981", "#F59E0B", "#EC4899"],
+    };
+
+    confetti({
+      ...defaults,
+      particleCount: Math.floor(count * 0.6),
+      spread: 90,
+      startVelocity: 45,
+    });
+    confetti({
+      ...defaults,
+      particleCount: Math.floor(count * 0.4),
+      spread: 120,
+      startVelocity: 35,
+    });
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -35,7 +58,8 @@ export default function EarlyAccessPage() {
       }
       setLoading(false);
       setSubmitted(true);
-    }, 700);
+      triggerSprinkles();
+    }, 600);
   };
 
   return (
@@ -205,34 +229,47 @@ export default function EarlyAccessPage() {
             </>
           ) : (
             /* Success confirmation */
-            <div className="text-center py-6 animate-fadeIn">
-              <div className="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-5 shadow-inner">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+            <div className="text-center py-4">
+              {/* Dynamic Self-Drawing Handcrafted Checkmark matching reference */}
+              <div className="relative w-20 h-20 mx-auto mb-6 flex items-center justify-center animate-pop-check">
+                <div className="w-16 h-16 rounded-2xl bg-slate-900/5 border border-slate-200/80 flex items-center justify-center shadow-sm">
+                  <svg
+                    width="44"
+                    height="44"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="overflow-visible"
+                  >
+                    {/* Handwritten stroke path with draw animation */}
+                    <path
+                      d="M18 52 L38 78 L84 20"
+                      stroke="#0F172A"
+                      strokeWidth="11"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="animate-draw-check"
+                    />
+                  </svg>
+                </div>
               </div>
 
-              <h2 className="font-serif text-3xl font-medium text-slate-900 mb-2">
-                You&apos;re On the VIP List!
+              <h2 className="font-serif text-3xl sm:text-4xl font-normal text-slate-900 mb-3 tracking-tight">
+                You&apos;re On the <GradientText className="font-serif italic font-medium">VIP List</GradientText>
               </h2>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 max-w-sm mx-auto">
-                Thank you, <strong className="text-slate-900">{formData.name}</strong>. We&apos;ve reserved your early access spot for <strong className="text-slate-900">{formData.location}</strong>. Look out for an invitation at <strong className="text-slate-900">{formData.email}</strong> when rollout begins!
+              
+              <p className="text-slate-500 text-sm leading-relaxed mb-8 max-w-md mx-auto">
+                Thank you, <span className="font-semibold text-slate-800">{formData.name}</span>! We&apos;ve reserved your priority access. When rollout begins, your personal invitation link will be sent to <span className="font-semibold text-slate-800">{formData.email}</span>.
               </p>
-
-              <div className="p-4 bg-accent/5 rounded-2xl border border-accent/15 mb-6 text-left">
-                <p className="text-xs font-semibold text-accent mb-1">What to expect next:</p>
-                <ul className="text-xs text-slate-600 space-y-1 list-disc list-inside">
-                  <li>Priority TestFlight / Google Play Beta invite</li>
-                  <li>Exclusive early bird store price alerts</li>
-                  <li>Free lifetime early adopter tier privileges</li>
-                </ul>
-              </div>
 
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors cursor-pointer"
+                className="btn-primary-animated w-full py-3.5 px-6 rounded-xl text-sm font-semibold text-white shadow-md cursor-pointer inline-flex items-center justify-center gap-2"
               >
-                Return to BestBasket
+                <span>Return to BestBasket</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
               </Link>
             </div>
           )}

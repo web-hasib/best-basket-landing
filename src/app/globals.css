@@ -242,3 +242,42 @@ a {
   background: #F1F4FA;
   border: 1px solid #E2E8F0;
 }
+
+/* Handwritten / dynamic stroke draw checkmark animation */
+@keyframes drawCheckmark {
+  0% {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.65);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-draw-check {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawCheckmark 0.85s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.animate-pop-check {
+  animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
